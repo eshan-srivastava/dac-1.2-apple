@@ -1,43 +1,56 @@
 # Problem Statement 
-This should be a brief description of the domain of your dataset (e.g. if it is the Titanic Dataset then write about the ship, the incident that happened, what you're trying to do with the data).
+The subject matter of this dataset contains the stock prices of the 10 popular companies ( Apple, Amazon, Netflix, Microsoft, Google, Facebook, Tesla, Walmart, Uber and Zoom). This project specifically uses Apple's stock 
 ## Dataset
 
-The dataset used is the [Name of the Dataset](Download link) from (source of download e.g Kaggle). If the task is a classification task, then you must specify the number of classes and give a 1 line description of each class as follows(example of Iris Dataset). 
-
-The 3 class labels are:
+The dataset used is the Historical Stock Price of (FAANG + 5) companies (https://www.kaggle.com/suddharshan/historical-stock-price-of-10-popular-companies) from Kaggle.
 <br>
-
-**1. Iris Setosa:** Given iris flower belongs to the Setosa species
+- The dataset has data regarding following features:
 <br>
-**2. Iris Virginica:** Given iris flower belongs to the Virginica species
+- The date - "Date"
 <br>
-**3. Iris Versicolor:** Given iris flower belongs to the Versicolor species
-
-If the task is a regression task, then explain the target variable and give brief statistics.(e.g. Housing Prices)
-
-**Target Variable: SalePrice**
+- The opening price of the stock - "Open"
 <br>
+- The high price of that day - "High"
 <br>
-Sale Price refers to the selling price of the house.
+- The low price of that day - "Low"
 <br>
-**Mean Selling Price:** 121,000$
+- The closed price of that day - "Close"
 <br>
-**Max Selling Price:** 1,000,000$
+- The amount of stocks traded during that day - "Volume"
 <br>
-**Min Selling Price:** 45,000$
-
-
-## Model(s) Used
-
-This needs to be a description of the model used and a brief overview of how it works in theory (e.g taken of a CNN Model): 
-
-The network architecture used was a basic CNN model, with Max Pooling and ReLU Activation functions. Input images are resized to an optimal size and then fed into the **Convolutional layer**. These images are converted to their pixel values, which can be imagined as a three-dimensional matrix for the purpose of visualization. The **Convolutional layer** has a kernel. This kernel is generally a small matrix of specified kernel size mxnx3 (3 for RGB images). 
+- The stock's closing price that has been amended to include any distributions/corporate actions that occurs before next days open - "Adj[usted] Close"
 <br>
+- Time period - 2015 to 2021 (day level)
 
-**Rectified Linear Unit (ReLU)** is the activation layer used in CNNs.The activation function is applied to increase non-linearity in the CNN. Images are made of different objects that are not linear to each other.
 
+## Models Used
 
-**Max Pooling:** A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
+### 1. Linear regression
+ Linear Regression is the supervised Machine Learning model in which the model finds the best fit linear line between the independent and dependent variable i.e it finds the linear relationship between the dependent and independent variable.
+ <br>
+ This regression technique finds out a linear relationship between x (input) and y(output). Hence, the name is Linear Regression.
+<br>
+The typical equation of a line is y = mx + a, where m is the slope, x is independent variable and y is dependent variable that we are interested in predicting
+
+### 2. Support Vector Regression
+Support Vector Machine can also be used as a regression method, maintaining all the main features that characterize the algorithm (maximal margin). The Support Vector Regression (SVR) uses the same principles as the SVM for classification, with only a few minor differences. First of all, because output is a real number it becomes very difficult to predict the information at hand, which has infinite possibilities
+<br>
+Assuming that the equation of the hyperplane is as follows:
+
+Y = wx+b (equation of hyperplane)
+Then the equations of decision boundary become:
+
+wx+b= +a
+
+wx+b= -a
+
+Thus, any hyperplane that satisfies our SVR should satisfy:
+
+-a < Y- wx+b < +a 
+
+Our main aim here is to decide a decision boundary at ‘a’ distance from the original hyperplane such that data points closest to the hyperplane or the support vectors are within that boundary line.
 
 ## Future Work
-Good ideas or strategies that you were not able to implement which you think can help  improve performance.
+Testing with more regression algorithms and using stocks data of other companies to deduce their dependence. 
+<br>
+Also consider using date-time data to do a time-series analysis.
