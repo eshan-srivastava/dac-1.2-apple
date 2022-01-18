@@ -1,10 +1,5 @@
-# Historical Stock price of Apple 
 The subject matter of this dataset contains the stock prices of the 10 popular companies ( Apple, Amazon, Netflix, Microsoft, Google, Facebook, Tesla, Walmart, Uber and Zoom). This project specifically uses Apple's stock 
 ## Dataset
-
-The dataset used is the Historical Stock Price of (FAANG + 5) companies (https://www.kaggle.com/suddharshan/historical-stock-price-of-10-popular-companies) from Kaggle.
-
-The dataset has data regarding following features:
 
 - The date - "Date"
 
