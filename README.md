@@ -4,7 +4,7 @@ The subject matter of this dataset contains the stock prices of the 10 popular c
 
 The dataset used is the Historical Stock Price of (FAANG + 5) companies (https://www.kaggle.com/suddharshan/historical-stock-price-of-10-popular-companies) from Kaggle.
 <br>
-- The dataset has data regarding following features:
+The dataset has data regarding following features:
 <br>
 - The date - "Date"
 <br>
