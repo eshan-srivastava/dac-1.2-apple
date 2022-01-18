@@ -1,4 +1,6 @@
-The subject matter of this dataset contains the stock prices of the 10 popular companies ( Apple, Amazon, Netflix, Microsoft, Google, Facebook, Tesla, Walmart, Uber and Zoom). This project specifically uses Apple's stock 
+# Historical Stock price of Apple
+The subject matter of this dataset contains the stock prices of the 10 popular companies ( Apple, Amazon, Netflix, Microsoft, Google, Facebook, Tesla, Walmart, Uber and Zoom). This project specifically uses Apple's stock.
+People dealing in stock market find it advantageous to have accurate prediction of how certain stocks are performing. These companies have extremely valuable stocks and thus its sinsight is valuable to people in the market.
 ## Dataset
 
 - The date - "Date"
@@ -18,13 +20,21 @@ The subject matter of this dataset contains the stock prices of the 10 popular c
 - Time period - 2015 to 2021 (day level)
 
 **Target Variable** (in this case): High - highest price of the stack on a day.
+
 **Open** {Mean: 61.2, Max: 181, Min: 22.5}
+
 **High** {Mean: 61.9, Max: 182, Min: 22.9} 
+
 **Close** {Mean: 61.3, Max: 180, Min: 22.6} 
+
 **Low** {Mean: 60.6, Max: 179, Min: 22.4}
+
 **Volume** (m = Million) {Mean: 138m, Max: 639m, Min: 41m} 
+
 **Adj Close** {Mean: 59.8, Max: 180, Min: 21}
+
 **Date**: from 2nd Jan 2015 to 29th Dec 2021
+
 *However it is to be noted that in case of the nature of data, target variables and feature variables can be anything from : open, high, low, close, volume, adjusted close*
 
 ## Models Used
