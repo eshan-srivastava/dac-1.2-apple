@@ -1,5 +1,5 @@
-# Problem Statement 
-The subject matter of this dataset contains the stock prices of the 10 popular companies ( Apple, Amazon, Netflix, Microsoft, Google, Facebook, Tesla, Walmart, Uber and Zoom). This project specifically uses Apple's stock 
+# Historical Stock price of Apple
+The subject matter of this dataset contains the stock prices of the 10 popular companies (Apple, Amazon, Netflix, Microsoft, Google, Facebook, Tesla, Walmart, Uber and Zoom). This project specifically uses Apple's stock. These companies are the top tech companies and their stocks are of interest to many who deal in the stock market. Being able to predict the stocks of such companies can offer advantages in trade.
 ## Dataset
 
 The dataset used is the Historical Stock Price of (FAANG + 5) companies (https://www.kaggle.com/suddharshan/historical-stock-price-of-10-popular-companies) from Kaggle.
